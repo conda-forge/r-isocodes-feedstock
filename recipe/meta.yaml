@@ -1,4 +1,4 @@
-{% set version = "2019.02.13" %}
+{% set version = "2019.04.22" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ISOcodes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ISOcodes/ISOcodes_{{ version }}.tar.gz
-  sha256: 8851810a15177baebb6dc1a5af5bb8805317c18118dc0fb90bd713543a53adbf
+  sha256: 2386440c3bed8391ee3a029aab86c107d435d0dd6a970236512d7c105d146b6e
 
 build:
   noarch: generic
