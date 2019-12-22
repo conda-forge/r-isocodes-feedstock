@@ -1,4 +1,4 @@
-{% set version = '2019.04.22' %}
+{% set version = "2019.12.22" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ISOcodes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ISOcodes/ISOcodes_{{ version }}.tar.gz
-  sha256: 2386440c3bed8391ee3a029aab86c107d435d0dd6a970236512d7c105d146b6e
+  sha256: e4a0c623b08df47c08388a8432b7a4139734389b49d56ec702faf3858a104ecc
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
