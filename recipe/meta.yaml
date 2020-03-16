@@ -1,4 +1,4 @@
-{% set version = "2019.12.22" %}
+{% set version = "2020.03.16" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ISOcodes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ISOcodes/ISOcodes_{{ version }}.tar.gz
-  sha256: e4a0c623b08df47c08388a8432b7a4139734389b49d56ec702faf3858a104ecc
+  sha256: 160eb4ea23be53305e4e728002c8f5d3852d89155f538deccb734e7c8ad4e1c3
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -36,11 +36,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=ISOcodes
   license: GPL-2
-  summary: ISO language, territory, currency, script and character codes. Provides ISO 639 language
-    codes, ISO 3166 territory codes, ISO 4217 currency codes, ISO 15924 script codes,
-    and the ISO 8859 character codes as well as the UN M.49 area codes.
+  summary: ISO language, territory, currency, script and character codes. Provides ISO 639 language codes, ISO 3166 territory codes, ISO 4217 currency codes, ISO
+    15924 script codes, and the ISO 8859 character codes as well as the UN M.49 area codes.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
