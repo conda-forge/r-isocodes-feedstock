@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=ISOcodes
 
 Package license: GPL-2
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-isocodes-feedstock/blob/master/LICENSE.txt)
 
 Summary: ISO language, territory, currency, script and character codes. Provides ISO 639 language codes, ISO 3166 territory codes, ISO 4217 currency codes, ISO 15924 script codes, and the ISO 8859 character codes as well as the UN M.49 area codes.
-
-
 
 Current build status
 ====================
