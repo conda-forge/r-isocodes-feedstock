@@ -1,4 +1,4 @@
-{% set version = "2020.12.04" %}
+{% set version = "2021.02.24" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ISOcodes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ISOcodes/ISOcodes_{{ version }}.tar.gz
-  sha256: 5dced6b66ce403f01c80bb59e0b61aa2258e67cf70b99d9bf0a7f20a671e67a0
+  sha256: 152769bcb4ae99d06a767384541c2000c94990a2c6983780837f85e885b539a6
 
 build:
   merge_build_host: true  # [win]
