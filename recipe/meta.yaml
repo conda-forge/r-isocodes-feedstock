@@ -23,6 +23,7 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
   run:
@@ -35,11 +36,11 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=ISOcodes
-  license: GPL-2
-  
+  license: GPL-2.0-only
   summary: ISO language, territory, currency, script and character codes. Provides ISO 639 language codes, ISO 3166 territory codes, ISO 4217 currency codes, ISO 15924 script codes, and the ISO 8859 character codes as well as the UN M.49 area codes.
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
