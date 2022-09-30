@@ -3,7 +3,7 @@ About r-isocodes
 
 Home: https://CRAN.R-project.org/package=ISOcodes
 
-Package license: GPL-2
+Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-isocodes-feedstock/blob/main/LICENSE.txt)
 
