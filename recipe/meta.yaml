@@ -1,4 +1,4 @@
-{% set version = "2023.12.07" %}
+{% set version = "2024.02.12" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ISOcodes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ISOcodes/ISOcodes_{{ version }}.tar.gz
-  sha256: 73631fec5822d256e91d7b929ab7f5d7c2312749990d4031f65e0408c366d90e
+  sha256: 02cb7b918034085dffcba0d329a2bc52514873f898a3a716560ebf17b57ae2e6
 
 build:
   merge_build_host: true  # [win]
