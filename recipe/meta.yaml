@@ -1,6 +1,5 @@
 {% set version = "2024.02.12" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-isocodes
@@ -13,8 +12,7 @@ source:
   sha256: 02cb7b918034085dffcba0d329a2bc52514873f898a3a716560ebf17b57ae2e6
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
