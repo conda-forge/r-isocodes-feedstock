@@ -1,4 +1,4 @@
-{% set version = "2024.02.12" %}
+{% set version = "2025.05.18" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ISOcodes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ISOcodes/ISOcodes_{{ version }}.tar.gz
-  sha256: 02cb7b918034085dffcba0d329a2bc52514873f898a3a716560ebf17b57ae2e6
+  sha256: dbda7193bdaf3b09bb584b749f10a021454daf1717d6792e4befeb4247385b0d
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
